@@ -1,7 +1,15 @@
 .header {
   width: 50%;
+  height: 100px;
   margin: 0 auto;
-  &_ul li {
-    color: red;
-  }
+}
+
+.item {
+  cursor: pointer;
+}
+.item:hover {
+  opacity: 0.5;
+}
+.red {
+  color: red;
 }
