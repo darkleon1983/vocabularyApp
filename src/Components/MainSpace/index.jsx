@@ -1,22 +1,33 @@
 import React from "react";
 import styles from "./mainspace.module.scss";
 import cn from "classnames";
+import words from "../../Mocks/words.json";
 
 const MainSpace = () => {
+  console.log(words);
   return (
     <div>
       <h1 className="text-5xl text-center">Check your vocabulary</h1>
       <div className={cn(styles.blockContainer)}>
         <div className={cn("grid  grid-flow-col gap-4", styles.mainContainer)}>
-          <div className={cn(styles.questionBlock)}>
-            <h2 className="text-3xl">Слово:</h2>
-            <div className={cn(styles.blockContainer)}>
-              <div className={cn(styles.wordCard, styles.question)}>devide</div>
+          <div className={cn(styles.questionBlock, "grid")}>
+            <h2 className="text-3xl text-center">Слово:</h2>
+            <div
+              className={cn(
+                styles.blockContainer,
+                "grid justify-self-center place-items-baseline"
+              )}
+            >
+              <div className={cn(styles.wordCard, styles.question)}>
+                {words[0].word}
+              </div>
             </div>
           </div>
           <div className={cn(styles.answerBlock)}>
             <h2 className="text-3xl">Перевод:</h2>
-            <div className={cn(styles.blockContainer)}>
+            <div
+              className={cn(styles.blockContainer, "grid grid-rows-4 gap-4")}
+            >
               <div className={cn(styles.wordCard, "text-center")}>Делить</div>
               <div className={cn(styles.wordCard, "text-center")}>Умножать</div>
               <div className={cn(styles.wordCard, "text-center")}>
