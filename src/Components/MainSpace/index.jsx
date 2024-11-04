@@ -4,7 +4,6 @@ import cn from "classnames";
 import words from "../../Mocks/words.json";
 
 const MainSpace = () => {
-  console.log(words);
   return (
     <div>
       <h1 className="text-5xl text-center">Check your vocabulary</h1>
