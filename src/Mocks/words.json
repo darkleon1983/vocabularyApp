@@ -4,6 +4,48 @@
     "word": "devide",
     "translation": "делить",
     "partOfSpeech": "verb",
-    "category": "common"
+    "category": " Web development"
+  },
+  {
+    "id": 2,
+    "word": "short hand",
+    "translation": "noun",
+    "partOfSpeech": "verb",
+    "category": " Web development"
+  },
+  {
+    "id": 3,
+    "word": "review",
+    "translation": "обзор",
+    "partOfSpeech": "noun",
+    "category": " Web development"
+  },
+  {
+    "id": 4,
+    "word": "clarify",
+    "translation": "уточнять",
+    "partOfSpeech": "verb",
+    "category": " Web development"
+  },
+  {
+    "id": 5,
+    "word": "declare",
+    "translation": "объявлять",
+    "partOfSpeech": "verb",
+    "category": " Web development"
+  },
+  {
+    "id": 6,
+    "word": "key points",
+    "translation": "ключевые моменты",
+    "partOfSpeech": "noun",
+    "category": " Web development"
+  },
+  {
+    "id": 7,
+    "word": "refer",
+    "translation": "ссылаться",
+    "partOfSpeech": "verb",
+    "category": " Web development"
   }
 ]
