@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import styles from "./mainspace.module.scss";
+import styles from "./testingSpace.module.scss";
 import cn from "classnames";
 import words from "../../Mocks/words.json";
-import WordComponent from "../WordComponent";
-import TranslateComponent from "../TranslateComponent";
-import StatisticBlockComponent from "../StatisticBlockComponent";
+import WordComponent from "../../Components/WordComponent";
+import TranslateComponent from "../../Components/TranslateComponent";
+import StatisticBlockComponent from "../../Components/StatisticBlockComponent";
 
-const MainSpace = () => {
+const Testingpage = () => {
   useEffect(() => {
     let arrayOfIndexes = [];
     words.map((item) => {
@@ -18,6 +18,8 @@ const MainSpace = () => {
   const [currentWord, setCurrentWord] = useState();
   const [arrayOfCurrentIndexes, setArrayOfCurrentIndexes] = useState([]);
   console.log(arrayOfCurrentIndexes);
+  const isStarted = true;
+
   return (
     <div>
       <h1 className="text-5xl text-center">Check your vocabulary</h1>
@@ -32,4 +34,4 @@ const MainSpace = () => {
   );
 };
 
-export default MainSpace;
+export default Testingpage;

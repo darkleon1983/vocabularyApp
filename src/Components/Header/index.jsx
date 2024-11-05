@@ -3,15 +3,20 @@ import { Link } from "react-router-dom";
 import styles from "./header.module.scss";
 import cn from "classnames";
 
-const menuItems = ["О проекте", "Тренажер", "Поддержать проект", "Автор"];
+const menuItems = [
+  { item: "О проекте", link: "/" },
+  { item: "Тренажер", link: "/training" },
+  { item: "Поддержать проект", link: "/donate" },
+  { item: "Автор", link: "/author" },
+];
 const isTrue = false;
 function Header() {
   const [activeMenu, setActiveMenu] = useState();
 
   return (
-    <div className={styles.header}>
+    <div className={cn(styles.header, "pt-4")}>
       <ul className="grid grid-cols-4">
-        {menuItems.map((item, id) => (
+        {menuItems.map((obj, id) => (
           <li
             key={id}
             onClick={() => setActiveMenu(id)}
@@ -21,7 +26,7 @@ function Header() {
               activeMenu === id && styles.active
             )}
           >
-            {item}
+            <Link to={obj.link}>{obj.item}</Link>
           </li>
         ))}
       </ul>
