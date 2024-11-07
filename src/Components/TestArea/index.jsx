@@ -8,7 +8,7 @@ import cn from "classnames";
 const TestArea = () => {
   return (
     <div>
-      <div className={cn("grid grid-flow-col gap-4", styles.mainContainer)}>
+      <div className={cn("grid grid-flow-col gap-5", styles.mainContainer)}>
         <WordComponent />
         <TranslateComponent />
         <StatisticBlockComponent />
