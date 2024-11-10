@@ -17,13 +17,10 @@ const Testingpage = () => {
     setArrayOfCurrentIndexes(arrayOfIndexes);
   }, []);
 
-  const [currentWord, setCurrentWord] = useState();
   const [arrayOfCurrentIndexes, setArrayOfCurrentIndexes] = useState([]);
-  console.log(arrayOfCurrentIndexes);
   const [isStarted, setIsStarted] = useState(false);
   const handleStart = () => {
     setIsStarted(true);
-    console.log(isStarted);
   };
 
   return (

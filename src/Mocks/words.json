@@ -1,48 +1,48 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "word": "devide",
     "translation": "делить",
     "partOfSpeech": "verb",
     "category": " Web development"
   },
   {
-    "id": 2,
+    "id": 1,
     "word": "short hand",
     "translation": "noun",
     "partOfSpeech": "verb",
     "category": " Web development"
   },
   {
-    "id": 3,
+    "id": 2,
     "word": "review",
     "translation": "обзор",
     "partOfSpeech": "noun",
     "category": " Web development"
   },
   {
-    "id": 4,
+    "id": 3,
     "word": "clarify",
     "translation": "уточнять",
     "partOfSpeech": "verb",
     "category": " Web development"
   },
   {
-    "id": 5,
+    "id": 4,
     "word": "declare",
     "translation": "объявлять",
     "partOfSpeech": "verb",
     "category": " Web development"
   },
   {
-    "id": 6,
+    "id": 5,
     "word": "key points",
     "translation": "ключевые моменты",
     "partOfSpeech": "noun",
     "category": " Web development"
   },
   {
-    "id": 7,
+    "id": 6,
     "word": "refer",
     "translation": "ссылаться",
     "partOfSpeech": "verb",
