@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
+import { AppContext } from "../../App";
 import words from "../../Mocks/words.json";
 import styles from "./wordComponent.module.scss";
 import cn from "classnames";
 
-const WordComponent = ({ value, handleAnswer, indexes }) => {
-  console.log("speed", indexes);
-  const [currentWord, setCurrentWord] = useState(indexes);
+const WordComponent = () => {
+  const { arrayOfCurrentIndexes, setArrayOfCurrentIndexes, handleAnswer } =
+    useContext(AppContext);
+
+  console.log(arrayOfCurrentIndexes, words[arrayOfCurrentIndexes[0]].word);
+  // const [currentWord, setCurrentWord] = useState(arrayOfCurrentIndexes);
 
   return (
     <div className={cn(styles.questionBlock, "grid")}>
@@ -19,11 +23,10 @@ const WordComponent = ({ value, handleAnswer, indexes }) => {
         <div
           onClick={() => {
             handleAnswer();
-            console.log(indexes);
           }}
           className={cn(styles.wordCard, styles.question)}
         >
-          {value[indexes[0]].word}
+          {words[arrayOfCurrentIndexes[0]].word}
         </div>
       </div>
     </div>

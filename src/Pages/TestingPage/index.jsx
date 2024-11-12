@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./testingSpace.module.scss";
 import cn from "classnames";
 import words from "../../Mocks/words.json";
@@ -9,15 +9,6 @@ import StartButton from "../../Components/StartButton";
 import TestArea from "../../Components/TestArea";
 
 const Testingpage = () => {
-  useEffect(() => {
-    let arrayOfIndexes = [];
-    words.map((item) => {
-      arrayOfIndexes.push(item.id);
-    });
-    setArrayOfCurrentIndexes(arrayOfIndexes);
-  }, []);
-
-  const [arrayOfCurrentIndexes, setArrayOfCurrentIndexes] = useState([]);
   const [isStarted, setIsStarted] = useState(false);
   const handleStart = () => {
     setIsStarted(true);
