@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import styles from "./testingSpace.module.scss";
 import cn from "classnames";
-import words from "../../Mocks/words.json";
-import WordComponent from "../../Components/WordComponent";
-import TranslateComponent from "../../Components/TranslateComponent";
-import StatisticBlockComponent from "../../Components/StatisticBlockComponent";
 import StartButton from "../../Components/StartButton";
 import TestArea from "../../Components/TestArea";
 

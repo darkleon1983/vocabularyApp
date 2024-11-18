@@ -1,11 +1,9 @@
-import React, { useState, useContext } from "react";
-import { AppContext } from "../../App";
+import React from "react";
 import WordComponent from "../WordComponent";
 import TranslateComponent from "../TranslateComponent";
 import StatisticBlockComponent from "../StatisticBlockComponent";
 import styles from "./testArea.module.scss";
 import cn from "classnames";
-import words from "../../Mocks/words.json";
 
 const TestArea = () => {
   return (

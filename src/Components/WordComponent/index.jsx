@@ -5,12 +5,7 @@ import styles from "./wordComponent.module.scss";
 import cn from "classnames";
 
 const WordComponent = () => {
-  const { arrayOfCurrentIndexes, setArrayOfCurrentIndexes, handleAnswer } =
-    useContext(AppContext);
-
-  console.log(arrayOfCurrentIndexes, words[arrayOfCurrentIndexes[0]].word);
-  // const [currentWord, setCurrentWord] = useState(arrayOfCurrentIndexes);
-
+  const { arrayOfCurrentIndexes, handleAnswer } = useContext(AppContext);
   return (
     <div className={cn(styles.questionBlock, "grid")}>
       <h2 className="text-3xl text-center">Слово:</h2>
