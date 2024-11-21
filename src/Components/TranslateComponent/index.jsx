@@ -6,22 +6,28 @@ import acjectives from "../../Mocks/adjectives.json";
 import verbs from "../../Mocks/verbs.json";
 import nouns from "../../Mocks/nouns.json";
 import makeFourItemsArray from "../../utils";
+import words from "../../Mocks/words.json";
 
 const TranslateComponent = () => {
-  let currentAdjectives = [...acjectives];
-  let currentVerbs = [...verbs];
-  let currentNouns = [...nouns];
-  const { currentWord, handleAnswer } = useContext(AppContext);
-  let result = makeFourItemsArray(currentAdjectives);
-  console.log(result);
-
+  const {
+    currentWord,
+    handleAnswer,
+    arrayOfAnswers,
+    setArrayOfAnswers,
+    arrayOfCurrentIndexes,
+  } = useContext(AppContext);
+  console.log("in component", words[arrayOfCurrentIndexes[0]].word);
+  console.log("currentWord", currentWord.translation);
   return (
     <div className={cn(styles.answerBlock)}>
       <h2 className="text-3xl">Перевод:</h2>
       <div className={cn(styles.blockContainer, "grid grid-rows-4 gap-4")}>
         <div
           onClick={() => {
+            // if (currentWord.translation === "делить") {
             handleAnswer();
+            console.log("translation component", arrayOfAnswers);
+            // }
           }}
           className={cn(styles.wordCard, "text-center")}
         >
@@ -41,7 +47,10 @@ const TranslateComponent = () => {
         </div>
         <div className={cn(styles.wordCard, "text-center")}>Презрение</div>
         <div
-          onClick={() => console.log("Круассан")}
+          onClick={() => {
+            makeFourItemsArray(acjectives, setArrayOfAnswers);
+            console.log(arrayOfAnswers);
+          }}
           className={cn(styles.wordCard, "text-center")}
         >
           Круассан

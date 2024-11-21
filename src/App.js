@@ -9,6 +9,8 @@ import Testingpage from "./Pages/TestingPage";
 import Project from "./Pages/Project/project";
 import { createContext, useState } from "react";
 import words from "../src/Mocks/words.json";
+import adjectives from "../src/Mocks/adjectives.json";
+import makeFourItemsArray from "./utils";
 
 export const AppContext = createContext();
 // console.log("App", AppContext);
@@ -21,29 +23,13 @@ function App() {
   const [currentWord, setCurrentWord] = useState(
     words[arrayOfCurrentIndexes[0]]
   );
-  // const handleAnswer = () => {
-  //   const firstElement = arrayOfCurrentIndexes.shift();
-  //   setArrayOfCurrentIndexes(arrayOfCurrentIndexes);
-  //   setCurrentWord(words[arrayOfCurrentIndexes[0]]);
+  const [arrayOfAnswers, setArrayOfAnswers] = useState([]);
 
-  //   console.log(
-  //     "in loop",
-  //     arrayOfCurrentIndexes,
-  //     words[arrayOfCurrentIndexes[0]].word
-  //   );
-  // };
-  const handleAnswer = (currentWord, itemValue) => {
-    if (itemValue === currentWord) {
-      const firstElement = arrayOfCurrentIndexes.shift();
-      setArrayOfCurrentIndexes(arrayOfCurrentIndexes);
-      setCurrentWord(words[arrayOfCurrentIndexes[0]]);
-    }
-
-    console.log(
-      "in loop",
-      arrayOfCurrentIndexes,
-      words[arrayOfCurrentIndexes[0]].word
-    );
+  const handleAnswer = () => {
+    const firstElement = arrayOfCurrentIndexes.shift();
+    setArrayOfCurrentIndexes(arrayOfCurrentIndexes);
+    setCurrentWord(words[arrayOfCurrentIndexes[0]]);
+    makeFourItemsArray(adjectives, setArrayOfAnswers);
   };
 
   return (
@@ -54,6 +40,8 @@ function App() {
           setArrayOfCurrentIndexes,
           handleAnswer,
           currentWord,
+          arrayOfAnswers,
+          setArrayOfAnswers,
         }}
       >
         <Header />

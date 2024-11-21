@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./startButton.module.scss";
 import cn from "classnames";
+import { AppContext } from "../../App";
 
 const StartButton = ({ handleStart }) => {
   return (
