@@ -6,13 +6,21 @@ import TestArea from "../../Components/TestArea";
 import makeFourItemsArray from "../../utils";
 import adjectives from "../../Mocks/adjectives.json";
 import { AppContext } from "../../App";
+import words from "../../Mocks/words.json";
 
 const Testingpage = () => {
   const [isStarted, setIsStarted] = useState(false);
-  const { setArrayOfAnswers } = useContext(AppContext);
+  const { setArrayOfAnswers, arrayOfAnswers, arrayOfCurrentIndexes } =
+    useContext(AppContext);
   const handleStart = () => {
     setIsStarted(true);
-    makeFourItemsArray(adjectives, setArrayOfAnswers);
+    makeFourItemsArray(
+      adjectives,
+      setArrayOfAnswers,
+      words[arrayOfCurrentIndexes[0]].translation
+    );
+    arrayOfAnswers.push(words[arrayOfCurrentIndexes[0]].translation);
+    console.log(arrayOfAnswers);
   };
   // console.log("this is it", adjectives);
   return (
