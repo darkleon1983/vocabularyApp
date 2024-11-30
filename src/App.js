@@ -29,7 +29,11 @@ function App() {
     const firstElement = arrayOfCurrentIndexes.shift();
     setArrayOfCurrentIndexes(arrayOfCurrentIndexes);
     setCurrentWord(words[arrayOfCurrentIndexes[0]]);
-    makeFourItemsArray(adjectives, setArrayOfAnswers);
+    makeFourItemsArray(
+      adjectives,
+      setArrayOfAnswers,
+      words[arrayOfCurrentIndexes[0]].translation
+    );
   };
 
   return (

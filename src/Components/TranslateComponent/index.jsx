@@ -16,14 +16,27 @@ const TranslateComponent = () => {
     setArrayOfAnswers,
     arrayOfCurrentIndexes,
   } = useContext(AppContext);
-  // console.log("in component", words[arrayOfCurrentIndexes[0]].word);
-  // console.log("currentWord", currentWord.translation);
-  console.log("and now", arrayOfAnswers);
+
   return (
     <div className={cn(styles.answerBlock)}>
       <h2 className="text-3xl">Перевод:</h2>
       <div className={cn(styles.blockContainer, "grid grid-rows-4 gap-4")}>
-        {arrayOfAnswers.map((item) => (
+        {arrayOfAnswers.sort().map((item) => (
+          <div
+            onClick={() => {
+              arrayOfAnswers.push(words[arrayOfCurrentIndexes[0]].translation);
+              if (item === words[arrayOfCurrentIndexes[0]].translation) {
+                handleAnswer();
+              } else {
+                console.log("you're wrong!");
+              }
+            }}
+            className={cn(styles.wordCard, "text-center")}
+          >
+            {item}
+          </div>
+        ))}
+        {/* {arrayOfAnswers.map((item) => (
           <div
             onClick={() => {
               arrayOfAnswers.push(words[arrayOfCurrentIndexes[0]].translation);
@@ -35,7 +48,7 @@ const TranslateComponent = () => {
           >
             {item}
           </div>
-        ))}
+        ))} */}
 
         {/* <div
           onClick={() => {
