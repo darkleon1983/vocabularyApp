@@ -17,8 +17,14 @@ export const AppContext = createContext();
 
 function App() {
   const [arrayOfCurrentIndexes, setArrayOfCurrentIndexes] = useState([
-    0, 1, 2, 3, 4, 5, 6, 7,
+    ...Array(words.length).keys(),
   ]);
+
+  const [wordsQuantity, setWordsQuantity] = useState(
+    arrayOfCurrentIndexes.length
+  );
+  const [wrightAnswers, setWrightAnswers] = useState(0);
+  const [wrongAnswers, setWrongAnswers] = useState(0);
 
   const [currentWord, setCurrentWord] = useState(
     words[arrayOfCurrentIndexes[0]]
@@ -46,6 +52,9 @@ function App() {
           currentWord,
           arrayOfAnswers,
           setArrayOfAnswers,
+          wordsQuantity,
+          wrongAnswers,
+          wrightAnswers,
         }}
       >
         <Header />

@@ -15,6 +15,9 @@ const TranslateComponent = () => {
     arrayOfAnswers,
     setArrayOfAnswers,
     arrayOfCurrentIndexes,
+    wordsQuantity,
+    wrightAnswers,
+    wrongAnswers,
   } = useContext(AppContext);
 
   return (
@@ -27,6 +30,7 @@ const TranslateComponent = () => {
               arrayOfAnswers.push(words[arrayOfCurrentIndexes[0]].translation);
               if (item === words[arrayOfCurrentIndexes[0]].translation) {
                 handleAnswer();
+                console.log("in function", wrightAnswers);
               } else {
                 console.log("you're wrong!");
               }
