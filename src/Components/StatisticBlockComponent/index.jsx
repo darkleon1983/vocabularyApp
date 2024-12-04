@@ -29,7 +29,7 @@ const StatisticBlockComponent = () => {
         <h2 className="text-3xl">Результат:</h2>
         <div className={cn(styles.blockContainer)}>
           <span className="text-7xl">
-            {`${(wrightAnswers * 100) / wordsQuantity}%`}
+            {`${Math.round((wrightAnswers * 100) / wordsQuantity)}%`}
           </span>
         </div>
       </div>

@@ -41,6 +41,12 @@ function App() {
       words[arrayOfCurrentIndexes[0]].translation
     );
   };
+  const wrightAnswersAddingHandler = () => {
+    setWrightAnswers(wrightAnswers + 1);
+  };
+  const wrongAnswersAddingHandler = () => {
+    setWrongAnswers(wrongAnswers + 1);
+  };
 
   return (
     <div className="App">
@@ -55,6 +61,8 @@ function App() {
           wordsQuantity,
           wrongAnswers,
           wrightAnswers,
+          wrightAnswersAddingHandler,
+          wrongAnswersAddingHandler,
         }}
       >
         <Header />
