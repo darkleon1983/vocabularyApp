@@ -47,7 +47,7 @@ function App() {
   const wrongAnswersAddingHandler = () => {
     setWrongAnswers(wrongAnswers + 1);
   };
-
+  console.log("array of indexes", arrayOfCurrentIndexes);
   return (
     <div className="App">
       <AppContext.Provider

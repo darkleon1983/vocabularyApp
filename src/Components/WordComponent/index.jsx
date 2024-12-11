@@ -18,6 +18,7 @@ const WordComponent = () => {
         <div
           onClick={() => {
             handleAnswer();
+            
           }}
           className={cn(styles.wordCard, styles.question)}
         >

@@ -22,10 +22,7 @@ const TranslateComponent = () => {
     wrightAnswersAddingHandler,
     wrongAnswersAddingHandler,
   } = useContext(AppContext);
-  const [count, setCount] = useState(0);
-  const handlerClick = () => {
-    setCount(count + 1);
-  };
+
   return (
     <div className={cn(styles.answerBlock)}>
       <h2 className="text-3xl">Перевод:</h2>
@@ -39,7 +36,8 @@ const TranslateComponent = () => {
                 wrightAnswersAddingHandler();
                 console.log("in function", wrightAnswers);
               } else {
-                console.log("you're wrong!");
+                handleAnswer();
+                wrongAnswersAddingHandler();
               }
             }}
             className={cn(styles.wordCard, "text-center")}
@@ -48,9 +46,7 @@ const TranslateComponent = () => {
           </div>
         ))}
       </div>
-      <div>
-        <button onClick={handlerClick}>{count}</button>
-      </div>
+      <div></div>
     </div>
   );
 };
