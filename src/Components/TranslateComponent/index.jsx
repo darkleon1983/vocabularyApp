@@ -21,6 +21,8 @@ const TranslateComponent = () => {
     wrongAnswers,
     wrightAnswersAddingHandler,
     wrongAnswersAddingHandler,
+    statisticHandler,
+    setIsStarted,
   } = useContext(AppContext);
 
   return (
@@ -30,11 +32,16 @@ const TranslateComponent = () => {
         {arrayOfAnswers.sort().map((item) => (
           <div
             onClick={() => {
+              if (arrayOfCurrentIndexes.length === 1) {
+                statisticHandler();
+                setIsStarted(false);
+                return;
+              }
+              console.log("wrightAnswers", wrongAnswers);
               arrayOfAnswers.push(words[arrayOfCurrentIndexes[0]].translation);
               if (item === words[arrayOfCurrentIndexes[0]].translation) {
                 handleAnswer();
                 wrightAnswersAddingHandler();
-                console.log("in function", wrightAnswers);
               } else {
                 handleAnswer();
                 wrongAnswersAddingHandler();

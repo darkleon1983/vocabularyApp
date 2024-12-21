@@ -7,11 +7,18 @@ import makeFourItemsArray from "../../utils";
 import adjectives from "../../Mocks/adjectives.json";
 import { AppContext } from "../../App";
 import words from "../../Mocks/words.json";
+import ResultComponent from "../../Components/ResultComponent";
 
 const Testingpage = () => {
-  const [isStarted, setIsStarted] = useState(false);
-  const { setArrayOfAnswers, arrayOfAnswers, arrayOfCurrentIndexes } =
-    useContext(AppContext);
+  const {
+    setArrayOfAnswers,
+    arrayOfAnswers,
+    arrayOfCurrentIndexes,
+    isStatisticReady,
+    isStarted,
+    setIsStarted,
+    wrightAnswers,
+  } = useContext(AppContext);
   const handleStart = () => {
     setIsStarted(true);
     makeFourItemsArray(
@@ -20,17 +27,22 @@ const Testingpage = () => {
       words[arrayOfCurrentIndexes[0]].translation
     );
     arrayOfAnswers.push(words[arrayOfCurrentIndexes[0]].translation);
-    console.log(arrayOfAnswers);
   };
-  // console.log("this is it", adjectives);
   return (
     <div>
-      <h1 className="text-5xl text-center">Check your vocabulary</h1>
-      {!isStarted && <StartButton handleStart={handleStart} />}
+      {!isStatisticReady ? (
+        <h1 className={cn("text-5xl text-center")}>Check your vocabulary</h1>
+      ) : (
+        <h1 className={cn("text-5xl text-center")}>Вы прошли проверку!</h1>
+      )}
+      {!isStarted && !isStatisticReady && (
+        <StartButton handleStart={handleStart} />
+      )}
       <div className={cn(styles.blockContainer)}>
         <div className={cn("grid grid-flow-col gap-4", styles.mainContainer)}>
           {isStarted && <TestArea />}
         </div>
+        <div>{isStatisticReady && <ResultComponent />}</div>
       </div>
     </div>
   );

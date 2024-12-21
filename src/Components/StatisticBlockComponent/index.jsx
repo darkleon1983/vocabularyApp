@@ -14,15 +14,19 @@ const StatisticBlockComponent = () => {
       )}
     >
       <div className="text-center">
-        <h2 className="text-3xl">Не верно:</h2>
+        <h2 className={cn("text-3xl")}>Не верно:</h2>
         <div className={cn(styles.blockContainer)}>
-          <span className="text-6xl">{wrongAnswers}</span>
+          <span className={cn(styles.wrongAnswerStatistic, "text-6xl")}>
+            {wrongAnswers}
+          </span>
         </div>
       </div>
       <div className="text-center">
         <h2 className="text-3xl">Верно:</h2>
         <div className={cn(styles.blockContainer)}>
-          <span className="text-6xl ">{wrightAnswers}</span>
+          <span className={cn(styles.wrightAnswerStatistic, "text-6xl")}>
+            {wrightAnswers}
+          </span>
         </div>
       </div>
       <div className="row-span-2 col-span-2 text-center">

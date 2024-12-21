@@ -10,6 +10,10 @@ import Project from "./Pages/Project/project";
 import { createContext, useState } from "react";
 import words from "../src/Mocks/words.json";
 import adjectives from "../src/Mocks/adjectives.json";
+import nouns from "./Mocks/nouns.json";
+import verbs from "./Mocks/verbs.json";
+import adverbs from "./Mocks/adverbs.json";
+import answersArray from "./Mocks/answersArray.json";
 import makeFourItemsArray from "./utils";
 
 export const AppContext = createContext();
@@ -30,13 +34,59 @@ function App() {
     words[arrayOfCurrentIndexes[0]]
   );
   const [arrayOfAnswers, setArrayOfAnswers] = useState([]);
+  const [isStatisticReady, setIsStatisticReady] = useState(false);
+  const [isStarted, setIsStarted] = useState(false);
+  const statisticHandler = () => {
+    setIsStatisticReady(!isStatisticReady);
+  };
 
   const handleAnswer = () => {
     const firstElement = arrayOfCurrentIndexes.shift();
     setArrayOfCurrentIndexes(arrayOfCurrentIndexes);
     setCurrentWord(words[arrayOfCurrentIndexes[0]]);
+
+    // if (currentWord.partOfSpeech == "adjective") {
+    //   setQuestionArray(adjectives);
+    //   console.log("adjectives");
+    // } else if (currentWord.partOfSpeech == "noun") {
+    //   console.log("nouns");
+    //   setQuestionArray(nouns);
+    // } else if (currentWord.partOfSpeech == "adverbs") {
+    //   console.log("adverbs");
+    //   setQuestionArray(adverbs);
+    // } else {
+    //   console.log("verbs");
+    //   setQuestionArray(verbs);
+    // }
+    // switch (currentWord.partOfSpeech) {
+    //   case "adjective": {
+    //     activeArrayHandler(adjectives);
+    //     console.log("adjectives");
+    //     // return questionArray;
+    //   }
+    //   case "noun": {
+    //     activeArrayHandler(nouns);
+    //     console.log("nouns");
+    //     // return questionArray;
+    //   }
+    //   case "verb": {
+    //     activeArrayHandler(verbs);
+    //     console.log("verbs");
+    //     // return questionArray;
+    //   }
+    //   case "adverb": {
+    //     activeArrayHandler(adverbs);
+    //     console.log("adverbs");
+    //     // return questionArray;
+    //   }
+    //   default:
+    //     console.log("default");
+    //     activeArrayHandler(test);
+    // }
+    // console.log(currentWord.partOfSpeech);
+    // console.log(questionArray);
     makeFourItemsArray(
-      adjectives,
+      answersArray,
       setArrayOfAnswers,
       words[arrayOfCurrentIndexes[0]].translation
     );
@@ -47,7 +97,7 @@ function App() {
   const wrongAnswersAddingHandler = () => {
     setWrongAnswers(wrongAnswers + 1);
   };
-  console.log("array of indexes", arrayOfCurrentIndexes);
+
   return (
     <div className="App">
       <AppContext.Provider
@@ -63,6 +113,11 @@ function App() {
           wrightAnswers,
           wrightAnswersAddingHandler,
           wrongAnswersAddingHandler,
+          statisticHandler,
+          isStatisticReady,
+          isStarted,
+          setIsStarted,
+          wordsQuantity,
         }}
       >
         <Header />
