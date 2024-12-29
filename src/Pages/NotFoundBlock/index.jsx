@@ -1,15 +1,20 @@
 import React from "react";
 import styles from "./NotFoundBlock.module.scss";
+import { Link } from "react-router-dom";
+import cn from "classnames";
 
 const NotFoundBlock = () => {
   return (
     <div className={styles.root}>
       <h1>
         <span>((</span> <br />
-        Ничего не найдено
       </h1>
       <p className={styles.description}>
-        К сожалению, данная страница отсутствует в нашем интернет-магазине
+        Страница еще не готова, но основной функционал сайта работает и вы
+        можете развивать свой лексикон. <br />
+        <Link to={"/training"} className={cn("underline")}>
+          Перейти к тренировке
+        </Link>
       </p>
     </div>
   );

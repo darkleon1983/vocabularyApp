@@ -15,13 +15,7 @@ const WordComponent = () => {
           "grid justify-self-center place-items-baseline"
         )}
       >
-        <div
-          onClick={() => {
-            handleAnswer();
-            
-          }}
-          className={cn(styles.wordCard, styles.question)}
-        >
+        <div className={cn(styles.wordCard, styles.question)}>
           {words[arrayOfCurrentIndexes[0]].word}
         </div>
       </div>

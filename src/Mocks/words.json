@@ -1,51 +1,1248 @@
 [
   {
     "id": 0,
-    "word": "devide",
-    "translation": "делить",
-    "partOfSpeech": "verb",
-    "category": " Web development"
+    "word": "contiguous",
+    "translation": "смежный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
   },
   {
     "id": 1,
-    "word": "short hand",
-    "translation": "стенография",
+    "word": "to splice",
+    "translation": "сращивать",
     "partOfSpeech": "verb",
-    "category": " Web development"
+    "category": "Web development"
   },
   {
     "id": 2,
-    "word": "review",
-    "translation": "обзор",
-    "partOfSpeech": "noun",
-    "category": " Web development"
+    "word": "substantially",
+    "translation": "существенно, по существу",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
   },
   {
     "id": 3,
-    "word": "clarify",
-    "translation": "уточнять",
-    "partOfSpeech": "verb",
-    "category": " Web development"
+    "word": "simultaneously",
+    "translation": "одновременно",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
   },
   {
     "id": 4,
-    "word": "declare",
-    "translation": "объявлять",
-    "partOfSpeech": "verb",
-    "category": " Web development"
+    "word": "plain",
+    "translation": "простой, незамысловатый",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
   },
   {
     "id": 5,
-    "word": "key points",
-    "translation": "ключевые моменты",
-    "partOfSpeech": "noun",
-    "category": " Web development"
+    "word": "omit",
+    "translation": "пропускать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
   },
   {
     "id": 6,
-    "word": "refer",
+    "word": "to introduce",
+    "translation": "вводить ",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 7,
+    "word": "to extend",
+    "translation": "расширить",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 8,
+    "word": "to conform",
+    "translation": "соответствовать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 9,
+    "word": "mindful",
+    "translation": "внимательный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 10,
+    "word": "ful-blown",
+    "translation": "полноценный, завершенный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 11,
+    "word": "Consequently",
+    "translation": "Следовательно",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 12,
+    "word": "impact",
+    "translation": "влияние",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 13,
+    "word": "to contribute",
+    "translation": "способствовать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 14,
+    "word": "arbitrary",
+    "translation": "произвольно, случайно",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 15,
+    "word": "observation",
+    "translation": "Наблюдение",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 16,
+    "word": "prerequisites",
+    "translation": "предпосылки",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 17,
+    "word": "underpinnings",
+    "translation": "основы",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 18,
+    "word": "cease",
+    "translation": "прекращение",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 19,
+    "word": "thorough",
+    "translation": "тщательный, скрупулезный, полный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 20,
+    "word": "to delve",
+    "translation": "углубляться, копаться",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 21,
+    "word": "exposure",
+    "translation": "воздействие",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 22,
+    "word": "brisk",
+    "translation": "проворный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 23,
+    "word": "grasp",
+    "translation": "схватывание, понимание",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 24,
+    "word": "to suggest",
+    "translation": "предлагать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 25,
+    "word": "substitute",
+    "translation": "замена",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 26,
+    "word": "treatment",
+    "translation": "обработка (лечение)",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 27,
+    "word": "heavier emphasis",
+    "translation": "более сильный акцент",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 28,
+    "word": "to expand",
+    "translation": "развернуть",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 29,
+    "word": "to incorporate",
+    "translation": "объединять",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 30,
+    "word": "root",
+    "translation": "корень",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 31,
+    "word": "essence",
+    "translation": "суть, смысл",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 32,
+    "word": "to maintain",
+    "translation": "обслуживать, поддерживать, сохранять",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 33,
+    "word": "to interrupt",
+    "translation": "прерывать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 34,
+    "word": "terse",
+    "translation": "краткая",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 35,
+    "word": "overhauled",
+    "translation": "капитально отремонтирован",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 36,
+    "word": "spelled out",
+    "translation": "прописано",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 37,
+    "word": "glimpse",
+    "translation": "проблеск",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 38,
+    "word": "encounter",
+    "translation": "столкновение",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 39,
+    "word": "sequence",
+    "translation": "последовательность",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 40,
+    "word": "interplay",
+    "translation": "взаимодействие",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 41,
+    "word": "to remaine",
+    "translation": "оставаться",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 42,
+    "word": "slightly",
+    "translation": " слегка",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 43,
+    "word": "toward",
+    "translation": " в направлении",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 44,
+    "word": "boundary",
+    "translation": " граница, предел",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 45,
+    "word": "hassle",
+    "translation": "перебранка",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 46,
+    "word": "to eliminate",
+    "translation": "устранить, ликвидировать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 47,
+    "word": "operation code",
+    "translation": "код операции",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 48,
+    "word": "subroutine",
+    "translation": " подпрограмма",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 49,
+    "word": "to point out",
+    "translation": " указывать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 50,
+    "word": "accolades",
+    "translation": "почести",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 51,
+    "word": "gratifying",
+    "translation": "приносящий удовлетворение",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 52,
+    "word": "demand",
+    "translation": "требование",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 53,
+    "word": "to intimidate",
+    "translation": "запугивать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 54,
+    "word": "straightforward",
+    "translation": "простой, понятный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 55,
+    "word": "to implement",
+    "translation": "осуществлять, реализовывать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 56,
+    "word": "arrange",
+    "translation": "организовать, упорядочивать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 57,
+    "word": "either",
+    "translation": "также, тоже",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 58,
+    "word": "to receive",
+    "translation": "получать, принимать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 59,
+    "word": "entire",
+    "translation": "весь",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 60,
+    "word": "shape",
+    "translation": "форма, фигура",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 61,
+    "word": "pitfall",
+    "translation": "ловушка",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 62,
+    "word": "jumpstart",
+    "translation": "быстрый старт",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 63,
+    "word": "abbreviated",
+    "translation": "сокращенный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 64,
+    "word": "to terminate",
+    "translation": "завершить, прекратить",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 65,
+    "word": "finiteness ",
+    "translation": "ограниченность",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 66,
+    "word": "prime number",
+    "translation": "простое число",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 67,
+    "word": "lacks",
+    "translation": "отсутствие, нехватка",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 68,
+    "word": "effective computability",
+    "translation": "эффективная вычислимость",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 69,
+    "word": "recipe",
+    "translation": "рецепт",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 70,
+    "word": "definiteness",
+    "translation": "определенность",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 71,
+    "word": "simile",
+    "translation": "сходство",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 72,
+    "word": "to infer the meaning",
+    "translation": "чтобы вывести смысл",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 73,
+    "word": "ambiguity",
+    "translation": "неоднозначно",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 74,
+    "word": "fraught",
+    "translation": "чревато",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 75,
+    "word": "adversely",
+    "translation": "неблагоприятно",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 76,
+    "word": "appropriate",
+    "translation": "подходящий",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 77,
+    "word": "enhancements",
+    "translation": "улучшения",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 78,
+    "word": "evidence",
+    "translation": "доказательство",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 79,
+    "word": "to define",
+    "translation": "определять",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 80,
+    "word": "particular",
+    "translation": "конкретный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 81,
+    "word": "to propose",
+    "translation": "предлагать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 82,
+    "word": "common",
+    "translation": "общий",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 83,
+    "word": "mighty",
+    "translation": "могущественный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 84,
+    "word": "rather",
+    "translation": "скорее",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 85,
+    "word": "angular",
+    "translation": "угловой",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 86,
+    "word": "to increase",
+    "translation": "увеличить",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 87,
+    "word": "quantity",
+    "translation": "количество",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 88,
+    "word": "to devote",
+    "translation": "посвящать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 89,
+    "word": "temporarily",
+    "translation": "временно",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 90,
+    "word": "entries",
+    "translation": "записи",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 91,
+    "word": "measuring",
+    "translation": "измерение",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 92,
+    "word": "integrated circuit package",
+    "translation": "пакет интегральных микросхем",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 93,
+    "word": "primarily",
+    "translation": "прежде всего",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 94,
+    "word": "additions",
+    "translation": "дополнение",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 95,
+    "word": "response",
+    "translation": "ответ",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 96,
+    "word": "although",
+    "translation": "хотя",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 97,
+    "word": "efficiently",
+    "translation": "продуктивно",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 98,
+    "word": "familiar",
+    "translation": "знакомый",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 99,
+    "word": "interwoven",
+    "translation": "переплетены",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 100,
+    "word": "preceding",
+    "translation": "предшествующий",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 101,
+    "word": "avoid",
+    "translation": "избежать, уклониться",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 102,
+    "word": "aware",
+    "translation": "осведомленный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 103,
+    "word": "finite",
+    "translation": "конечный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 104,
+    "word": "inclinations",
+    "translation": "склонность",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 105,
+    "word": "similar",
+    "translation": "похожий",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 106,
+    "word": "additional",
+    "translation": "дополнительный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 107,
+    "word": "fraction",
+    "translation": "доля",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 108,
+    "word": "to urge",
+    "translation": "принудить, побудить",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 109,
+    "word": "clueless",
+    "translation": "невежественный",
+    "partOfSpeech": "adjectived",
+    "category": "Web development"
+  },
+  {
+    "id": 110,
+    "word": "at the mercy",
+    "translation": "на милость, во власти",
+    "partOfSpeech": "ajective",
+    "category": "Web development"
+  },
+  {
+    "id": 111,
+    "word": "intervention",
+    "translation": "вмешательство",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 112,
+    "word": "below",
+    "translation": "ниже",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 113,
+    "word": "contrary",
+    "translation": "вопреки",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 114,
+    "word": "continually",
+    "translation": "беспрестанно",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 115,
+    "word": "approach",
+    "translation": "подход",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 116,
+    "word": "distraction",
+    "translation": "отвлечение",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 117,
+    "word": "sophisticated",
+    "translation": "сложный, утонченный, изысканный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 118,
+    "word": "internal",
+    "translation": "внутренний",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 119,
+    "word": "logic circuit",
+    "translation": "логическая схема",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 120,
+    "word": "sufficient",
+    "translation": "достаточно",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 121,
+    "word": "elaboration",
+    "translation": "разработка, проработка, совершенствование",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 122,
+    "word": "clarification",
+    "translation": "разъяснение",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 123,
+    "word": "further",
+    "translation": "в дальнейшем",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 124,
+    "word": "immediately",
+    "translation": "немедленно",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 125,
+    "word": "malfunction",
+    "translation": "неисправность",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 126,
+    "word": "rotate",
+    "translation": "вращать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 127,
+    "word": "infancy",
+    "translation": "младенчество",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 128,
+    "word": "apocryphal",
+    "translation": "недостоверный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 129,
+    "word": "possibility",
+    "translation": "возможность",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 130,
+    "word": "capability",
+    "translation": "возможность, умение",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 131,
+    "word": "ability",
+    "translation": "способность",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 132,
+    "word": "mild",
+    "translation": "мягкий",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 133,
+    "word": "to tend",
+    "translation": "иметь тенденцию",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 134,
+    "word": "to combine",
+    "translation": "комбинировать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 135,
+    "word": "underlying assumption",
+    "translation": "основополагающие предположения",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 136,
+    "word": "to get bogged",
+    "translation": "увязнуть",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 137,
+    "word": "to allow",
+    "translation": "позволять",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 138,
+    "word": "efficient",
+    "translation": "эффективный ",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 139,
+    "word": "essential aspects",
+    "translation": "основные аспекты",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 140,
+    "word": "each in turn",
+    "translation": "каждый по очереди",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 141,
+    "word": " to misguide",
+    "translation": "вводить в заблуждение",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 142,
+    "word": "development",
+    "translation": "разработка",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 143,
+    "word": "notion",
+    "translation": "понятие, определение",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 144,
+    "word": "to emphasize",
+    "translation": "подчеркивать, акцентировать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 145,
+    "word": "assuming",
+    "translation": "предполагая, что",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 146,
+    "word": "to permeate",
+    "translation": "пронизывать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 147,
+    "word": "previously",
+    "translation": "ранее",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 148,
+    "word": "optional",
+    "translation": "необязательный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 149,
+    "word": "to accept",
+    "translation": "принимать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 150,
+    "word": "precise",
+    "translation": "точный, аккуратный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 151,
+    "word": "to provide",
+    "translation": "предоставлять, обеспечивать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 152,
+    "word": "except",
+    "translation": "кроме",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 153,
+    "word": "to imply",
+    "translation": "подразумевать",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 154,
+    "word": "to determine",
+    "translation": "определять, устанавливать",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 155,
+    "word": "to describe",
+    "translation": "описывать",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 156,
+    "word": "to perform",
+    "translation": "выполнять, исполнять",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 157,
+    "word": "explicitly",
+    "translation": "явно, точно, недвусмысленно",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 158,
+    "word": "to assign",
+    "translation": "назначать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 159,
+    "word": "reference",
+    "translation": "ссылка",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 160,
+    "word": "equal",
+    "translation": "равный",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 161,
+    "word": "distinct",
+    "translation": "отчетливый",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 162,
+    "word": "to compare",
+    "translation": "сравнивать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 163,
+    "word": "obvious",
+    "translation": "очевидно",
+    "partOfSpeech": "adverb",
+    "category": "Web development"
+  },
+  {
+    "id": 164,
+    "word": "to consider",
+    "translation": "считать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 165,
+    "word": "to distinguish",
+    "translation": "различать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 166,
+    "word": "to persist",
+    "translation": "оставаться, сохраняться",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 167,
+    "word": "attempt",
+    "translation": "попытка",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 168,
+    "word": "to resolve",
+    "translation": "решать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 169,
+    "word": "interchangeably",
+    "translation": "взаимозаменяемые",
+    "partOfSpeech": "adjective",
+    "category": "Web development"
+  },
+  {
+    "id": 170,
+    "word": "to discard",
+    "translation": "отбрасывать",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 171,
+    "word": "to refer",
     "translation": "ссылаться",
     "partOfSpeech": "verb",
-    "category": " Web development"
+    "category": "Web development"
+  },
+  {
+    "id": 172,
+    "word": "to declare",
+    "translation": "объявлять",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 173,
+    "word": "key points",
+    "translation": "ключевые моменты",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 174,
+    "word": "to clarify ",
+    "translation": "уточнять",
+    "partOfSpeech": "verb",
+    "category": "Web development"
+  },
+  {
+    "id": 175,
+    "word": "review",
+    "translation": "обзор",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 176,
+    "word": "short hand",
+    "translation": "стенография",
+    "partOfSpeech": "noun",
+    "category": "Web development"
+  },
+  {
+    "id": 177,
+    "word": "to divide",
+    "translation": "делить",
+    "partOfSpeech": "verb",
+    "category": "Web development"
   }
 ]

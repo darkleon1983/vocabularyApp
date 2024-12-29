@@ -6,7 +6,7 @@ import MainSpace from "./Pages/TestingPage";
 import NotFound from "./Pages/NotFoundBlock";
 import cn from "classnames";
 import Testingpage from "./Pages/TestingPage";
-import Project from "./Pages/Project/project";
+import Project from "./Pages/Project";
 import { createContext, useState } from "react";
 import words from "../src/Mocks/words.json";
 import adjectives from "../src/Mocks/adjectives.json";
@@ -15,6 +15,8 @@ import verbs from "./Mocks/verbs.json";
 import adverbs from "./Mocks/adverbs.json";
 import answersArray from "./Mocks/answersArray.json";
 import makeFourItemsArray from "./utils";
+import BurgerComponent from "./Components/Burger";
+import MobileHeader from "./Components/MobileHeader";
 
 export const AppContext = createContext();
 // console.log("App", AppContext);
@@ -97,7 +99,11 @@ function App() {
   const wrongAnswersAddingHandler = () => {
     setWrongAnswers(wrongAnswers + 1);
   };
-
+  const [isMobile, setIsMobile] = useState(false);
+  const burgerHandler = () => {
+    console.log("hello, Burger");
+    setIsMobile(!isMobile);
+  };
   return (
     <div className="App">
       <AppContext.Provider
@@ -118,9 +124,19 @@ function App() {
           isStarted,
           setIsStarted,
           wordsQuantity,
+          isMobile,
+          setIsMobile,
+          burgerHandler,
         }}
       >
-        <Header />
+        <div className={cn("md:invisible")}>
+          <Header />
+        </div>
+
+        <div className={cn("lg:invisible xl:invisible md:visible")}>
+          <MobileHeader />
+        </div>
+
         <Routes>
           <Route path="/" element={<Project />} />
           <Route path="/training" element={<Testingpage />} />

@@ -1,0 +1,62 @@
+// .burgerContainer {
+//   position: relative;
+// }
+
+// .firstRect {
+//   position: absolute;
+//   cursor: pointer;
+//   left: 5px;
+//   top: -55px;
+//   width: 30px;
+//   height: 3px;
+//   background-color: black;
+// }
+// .secondRect {
+//   position: absolute;
+//   cursor: pointer;
+//   left: 5px;
+//   top: -62px;
+//   width: 30px;
+//   height: 3px;
+//   background-color: red;
+// }
+// .thirdRect {
+//   position: absolute;
+//   cursor: pointer;
+//   left: 5px;
+//   top: -69px;
+//   width: 30px;
+//   height: 3px;
+//   background-color: green;
+// }
+
+.burgerButtonOff {
+  display: none;
+}
+
+.burgerButton {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.burgerButton span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: lightblue;
+  left: 5px;
+}
+
+.burgerButton span:nth-child(1) {
+  background-color: #616a6b;
+  transform: translateY(-10px);
+}
+.burgerButton span:nth-child(2) {
+  background-color: #616a6b;
+  transform: translateY(0px);
+}
+.burgerButton span:nth-child(3) {
+  background-color: #616a6b;
+  transform: translateY(10px);
+}
