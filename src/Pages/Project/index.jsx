@@ -53,7 +53,7 @@ const Project = () => {
           <p>Почта для фидбэка:</p>
           <MailTo
             label="Опишите ваши пожелания!"
-            mailto="mailto:mts9832899777@gmail.com"
+            mailto="mailto: mts9832899777@yandex.ru"
           />
         </p>
       </div>
