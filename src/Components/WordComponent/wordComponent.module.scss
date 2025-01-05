@@ -1,3 +1,6 @@
+.questionBlock {
+  outline: 1px solid red;
+}
 .wordCard {
   width: auto;
   height: 50px;
@@ -21,7 +24,10 @@
 }
 
 .question {
-  height: 100px;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 60px;
+  min-height: 50px;
   font-size: 40px;
 }
 

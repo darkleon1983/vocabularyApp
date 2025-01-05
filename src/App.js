@@ -129,7 +129,7 @@ function App() {
           burgerHandler,
         }}
       >
-        <div className={cn("md:invisible")}>
+        <div className={cn("md:hidden")}>
           <Header />
         </div>
 
