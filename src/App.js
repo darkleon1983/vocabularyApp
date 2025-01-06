@@ -17,6 +17,7 @@ import answersArray from "./Mocks/answersArray.json";
 import makeFourItemsArray from "./utils";
 import BurgerComponent from "./Components/Burger";
 import MobileHeader from "./Components/MobileHeader";
+import Resume from "./Pages/Resume";
 
 export const AppContext = createContext();
 // console.log("App", AppContext);
@@ -140,6 +141,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Project />} />
           <Route path="/training" element={<Testingpage />} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AppContext.Provider>

@@ -9,6 +9,7 @@ const menuItems = [
   { item: "Тренажер", link: "/training" },
   { item: "Поддержать", link: "/donate" },
   { item: "Автор", link: "/author" },
+  { item: "Резюме", link: "/resume" },
 ];
 // const isTrue = false;
 function Header() {
@@ -17,7 +18,7 @@ function Header() {
   return (
     <div className={cn(styles.header, "pt-4")}>
       <nav>
-        <ul className="grid grid-cols-4 place-items-center">
+        <ul className="grid grid-cols-5 place-items-center">
           {menuItems.map((obj, id) => (
             <li
               key={id}
