@@ -10,7 +10,7 @@ const menuItems = [
   { item: "Тренажер", link: "/training" },
   { item: "Поддержать", link: "/donate" },
   { item: "Автор", link: "/author" },
-  { item: "Резюме", link: "/resume" },
+  { item: "Портфолио", link: "/portfolio" },
 ];
 
 function MobileHeader() {

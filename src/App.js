@@ -141,7 +141,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Project />} />
           <Route path="/training" element={<Testingpage />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/portfolio" element={<Resume />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AppContext.Provider>
