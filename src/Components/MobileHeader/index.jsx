@@ -17,14 +17,14 @@ function MobileHeader() {
   const [activeMenu, setActiveMenu] = useState();
   const { isMobile, setIsMobile } = useContext(AppContext);
   return (
-    <div className={cn(styles.mobileHeaderContainer)}>
+    <div className={cn(styles.mobileHeaderContainer, "z-50")}>
       <div className={cn("lg:invisible xl:invisible md:visible")}>
         <BurgerComponent />
       </div>
       {isMobile && (
-        <div className={cn("min-w-max h-80")}>
+        <div className={cn("min-w-max h-80 z-90")}>
           <nav>
-            <ul className={cn(styles.itemsList, "grid grid-rows-4")}>
+            <ul className={cn(styles.itemsList, "grid grid-rows-4 ")}>
               {menuItems.map((obj, id) => (
                 <li
                   key={id}

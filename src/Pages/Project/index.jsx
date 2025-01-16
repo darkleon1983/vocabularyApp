@@ -4,7 +4,7 @@ import MailTo from "../../Components/MailTo";
 
 const Project = () => {
   return (
-    <div className={cn("w-10/12 container sm:ml-10")}>
+    <div className={cn("w-10/12 container sm:ml-10 sm:mt-20")}>
       <div className={cn("grid justify-end ")}>
         <h1 className="text-5xl text-center"> Английский для программиста.</h1>
         <p className="text-2xl mt-4 text-justify">

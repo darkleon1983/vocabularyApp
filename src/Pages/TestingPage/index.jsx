@@ -29,7 +29,7 @@ const Testingpage = () => {
     arrayOfAnswers.push(words[arrayOfCurrentIndexes[0]].translation);
   };
   return (
-    <div>
+    <div className={cn("sm:mt-20")}>
       {!isStatisticReady ? (
         <h1 className={cn("text-5xl text-center")}>Check your vocabulary</h1>
       ) : (

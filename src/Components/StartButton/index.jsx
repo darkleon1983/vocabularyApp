@@ -5,7 +5,7 @@ import { AppContext } from "../../App";
 
 const StartButton = ({ handleStart }) => {
   return (
-    <div className="text-center mt-10">
+    <div className="text-center mt-10 z-0">
       <button onClick={() => handleStart()} className={cn(styles.pushable)}>
         <span className={cn(styles.shadow)}></span>
         <span className={cn(styles.edge)}></span>
