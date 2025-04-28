@@ -1,9 +1,10 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import styles from "./mobileHeader.module.scss";
 import BurgerComponent from "../Burger";
 import cn from "classnames";
 import { AppContext } from "../../App";
+import { useClickAway } from "react-use";
 
 const menuItems = [
   { item: "О проекте", link: "/" },
@@ -16,8 +17,15 @@ const menuItems = [
 function MobileHeader() {
   const [activeMenu, setActiveMenu] = useState();
   const { isMobile, setIsMobile } = useContext(AppContext);
+  const ref = useRef(null);
+
+  useClickAway(ref, () => {
+    setIsMobile(false);
+    console.log("away click");
+  });
+
   return (
-    <div className={cn(styles.mobileHeaderContainer, "z-50")}>
+    <div ref={ref} className={cn(styles.mobileHeaderContainer, "z-50")}>
       <div className={cn("lg:invisible xl:invisible md:visible")}>
         <BurgerComponent />
       </div>

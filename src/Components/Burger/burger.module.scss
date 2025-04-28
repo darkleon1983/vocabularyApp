@@ -1,40 +1,9 @@
-// .burgerContainer {
-//   position: relative;
-// }
-
-// .firstRect {
-//   position: absolute;
-//   cursor: pointer;
-//   left: 5px;
-//   top: -55px;
-//   width: 30px;
-//   height: 3px;
-//   background-color: black;
-// }
-// .secondRect {
-//   position: absolute;
-//   cursor: pointer;
-//   left: 5px;
-//   top: -62px;
-//   width: 30px;
-//   height: 3px;
-//   background-color: red;
-// }
-// .thirdRect {
-//   position: absolute;
-//   cursor: pointer;
-//   left: 5px;
-//   top: -69px;
-//   width: 30px;
-//   height: 3px;
-//   background-color: green;
-// }
-
 .burgerButtonOff {
   display: none;
 }
 
 .burgerButton {
+  outline: 1px solid red;
   position: relative;
   width: 40px;
   height: 40px;

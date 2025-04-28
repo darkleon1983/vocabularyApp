@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 import cn from "classnames";
 import MailTo from "../../Components/MailTo";
 
@@ -11,7 +11,7 @@ const Project = () => {
           <span className="ml-4">Этот</span> проект создан для начинающих
           web-разработчиков, как инструмент для изучения английского языка. На
           начальном этапе развития программиста ему не нужно говорить на
-          английском, но ему гораздо облегчит жизнь способность на нем читать.
+          английском, но ему сильно облегчит жизнь способность на нем читать.
         </p>
         <p className="text-2xl mt-4 text-justify">
           <span className="ml-4">Сколько</span> слов нужно знать начинающему
